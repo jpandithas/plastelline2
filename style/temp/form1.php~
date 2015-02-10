@@ -1,0 +1,22 @@
+ <HTML>
+ <HEAD>
+ <TITLE>Insert Form</TITLE>
+ </HEAD>
+ <BODY>
+ <FORM ACTION="write.php" METHOD="POST">
+<h2>Enter Details</h2>
+<?php 
+$status=$_GET[s];
+if ($status==0) {echo "<font color=\"red\"><b>Record Added!</b></font>";}
+if ($status==1) {echo "<font color=\"red\"><b>Some of your entries were empty!</b></font>";}
+if ($status==2) {echo "<font color=\"red\"><b>Phone Number cannot be characters!</b></font>";}
+?>
+
+ <P><?php if (!$_GET[fn]) {echo "<font color=\"red\">";}?>Name:<?php echo"</font>";?><input type=text name="firstname" value= '<?php echo $_GET[fn] ?>' size=30></p>
+ <P><?php if (!$_GET[ln]) {echo "<font color=\"red\">";}?>Surname:<?php echo"</font>";?><input type=text name="lastname" value= '<?php echo $_GET[ln] ?>' size=30></p>
+ <P><?php if (!$_GET[pn]) {echo "<font color=\"red\">";}?>Phone Number:<?php echo"</font>";?><input type=text name="phone" value= '<?php echo $_GET[pn] ?>' size=10></p>
+<p><input type=submit name="submit" value="Insert Record"></p>
+</FORM>
+</BODY>
+</HTML>
+

@@ -1,0 +1,28 @@
+<?php
+echo "<pre>";
+print_r($_POST);
+echo "</pre>";
+
+//get data from $_POST
+$fname = $_POST[firstname];
+$lname = $_POST[lastname];
+$phone = $_POST[phone]; 
+//check if data empty 
+if ((!$fname) or (!$lname) or (!$phone)) { header("Location:form1.php?s=1&fn=$fname&ln=$lname&pn=$phone");}
+//and set a RegEx so that only numbers are detected for phones --> [A-Z] the function to call is ergegi(RegEX,string)
+if (eregi('[A-Z]',$phone)) { header("Location:form1.php?s=2&fn=$fname&ln=$lname&pn=");} //phone is empty so that it appears red!
+ // open the connection
+ $conn = mysql_connect("localhost", "root", "mysql") or die(mysql_error());
+ // pick the database to use
+ mysql_select_db("phone",$conn) or die(mysql_error());
+ // pick the database to use;
+ // create the SQL statement
+ $sql = "INSERT INTO names values ('','$fname','$lname','$phone')";
+ // execute the SQL statement
+ if (mysql_query($sql, $conn)) {
+ header("Location:form1.php?s=0");
+ } else {
+ echo "something went wrong:".mysql_error();
+ }
+ ?>
+

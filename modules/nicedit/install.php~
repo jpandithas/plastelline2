@@ -1,0 +1,10 @@
+<?php 
+$mod_uuid="000001";
+$mod_name="NicEdit Textarea Editor";
+$mod_type="UI";
+$mod_data_placement="html_head";
+ 
+
+
+?>
+

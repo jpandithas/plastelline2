@@ -1,0 +1,199 @@
+
+/*html outer layer -- this affects the entire page background */
+
+html {
+ background: url('image/geometric.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+/* header styles*/
+h1, h2, p {
+    margin: 4px 8px;
+    font-family: sans-serif, helvetica;
+}
+
+/* the outer Wrapper*/
+#outer {
+    /*min-height:100%;*/
+    
+}
+/* the container shell*/
+#container {
+    background: white; 
+    width: 900px;
+    border: solid 9px grey;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-color: gainsboro;
+    -webkit-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.9);
+     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.9);
+}
+/* header*/
+#header {
+    background: Azure;
+    padding: 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    clear: left; 
+}
+
+/*site logo name*/
+
+#sitename {
+color: azure; 
+text-shadow: 1px 1px 4px #666666, -1px -1px 4px #FFFFFF;
+}
+
+/* status bar*/
+#statusbar {
+    margin-left: 200px; 
+    background: Azure;
+    color:red;
+    border: solid 1px grey;
+    border-radius: 1px;
+}
+
+/* content*/
+#content {
+    padding: 0.5em; 
+    /*min-height: 400px;*/
+    background: white;
+    margin-left: 200px; 
+    
+}
+/* left sidebar*/
+#sidebar-left {
+    width: 200px;
+    float: left;
+    background: Azure;
+    border-bottom: solid 1px azure; 
+    height: auto; 
+}    
+/* sidebar headers */
+
+#sidebar-header {
+font-family: helvetica, sans-serif; 
+color: #5C6F90; 
+text-shadow: 1px 1px 3px #666666, -1px -1px 3px #FFFFFF;
+}
+
+#block-header {
+font-family: helvetica, sans-serif; 
+color: #5C6F90; 
+text-shadow: 1px 1px 3px #666666, -1px -1px 3px #FFFFFF;
+}
+
+/* sidebar menu css */
+ul#sidebar {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: #D6D6D6;
+}
+ul#sidebar li{
+	border-top: 1px solid #A5B5C6;
+	list-style:none;
+}
+ul#sidebar li a:link, ul#sidebar li a:visited {
+	text-decoration: none;
+	display: block;
+	width: 88%;
+	padding: 6px 6%;
+	background-color: #5C6F90;
+	font: bold 10pt/1.5 arial, sans-serif;
+	color: #FFF;
+}
+ul#sidebar li a:hover {
+text-decoration: none;
+	display: block;
+	width: 88%;
+	padding: 6px 6%;
+	background-color: #5C6FFA;
+	font: bold 10pt/1.5 arial, sans-serif;
+	color: #FFA;
+}
+
+/* button links: animated links with hover */
+
+.button-link {
+    font-family: Tahoma, Sans-Serif; 
+    padding: 7px 8px;
+    background: #4479BA;
+    color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.button-link:hover {
+    background: #356094;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
+.button-link:active {
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #2E5481;
+    border: solid 1px #203E5F;
+}
+
+/* Footer */
+#footer {
+
+    padding: 15px;
+    background: Azure;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    clear: left; 
+}
+
+
+/* login table */
+#logintable { 
+  background-color: lightblue; 
+  border: solid 1px white;
+  width: 100%;
+     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background: 
+}
+
+
+/*login header */
+
+#loginhead {
+ background-color: lightsteelblue;
+ font-family: sans-serif;
+ width: 99%;
+ height: 20px;
+ border: solid 1px white;
+     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+

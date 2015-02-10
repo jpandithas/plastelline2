@@ -1,0 +1,21 @@
+<?php
+//include the object library file
+include ("libobj.php");
+include ("/var/www/html/eshop/includes/themeinc.php");
+//read GET superglobal
+$act=$_GET['action'];
+$stat=$_GET['status'];
+$ctype=$_GET['type'];
+
+//define a new object called link
+$link = new url(); 
+//call a method from that object that pushes urls
+//by the GET http method
+$link->set_type($ctype);
+$link->push_url($act,1,$ctype);
+echo "<link href='style/style.css' rel='stylesheet' type='text/css' />";
+include ("/var/www/html/eshop/style/theme.php");
+echo $ctype.$_SERVER[PHP_SELF];
+read_status($stat);
+
+?>

@@ -1,0 +1,22 @@
+<?php 
+
+function print_title($type,$id) {
+
+	switch ($type) {
+	 case "page":
+	 $title="page with ID: ".$id;
+	 echo $title;
+	 break;
+	 case "category":
+	 $title="page with ID: ".$id;
+	 echo $title;
+	 break;
+	 case "product":
+	 $title="page with ID: ".$id;
+	 echo $title;
+	 break;
+	
+	}
+}
+
+?> 

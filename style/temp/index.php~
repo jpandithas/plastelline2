@@ -1,0 +1,23 @@
+<?php
+//start the session handler
+session_start(); 
+//include the objects library file
+include ("includes/links.php");
+include ("includes/themeinc.php");
+include ("includes/mysql.php");
+db_exists(); 
+//read GET superglobal
+$act=$_GET['action'];
+$ctype=$_GET['type'];
+$status=$_GET['status'];
+$id=$_GET['id'];
+//setup $t_content
+$t_content.="<br>"; 
+//function to parse the user action in $_GET
+read_action();
+//define a new object called link
+
+echo "<link href='style/style.css' rel='stylesheet' type='text/css' />";
+include ("/var/www/html/eshop/style/theme.php");
+
+?>

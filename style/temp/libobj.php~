@@ -1,0 +1,52 @@
+<?php 
+
+
+class url {
+  //declare the property action
+  var $action;
+  //status is another property of url class
+  var $status;
+  //declare the status property
+  //set the action
+  var $type;
+  var $id;
+  //setter function example for action
+   function set_action($new_action) {
+   $this->action = $new_action;}
+   //setter function example for type
+   function set_type($new_type) {
+   $this->type = $new_type;}
+ //return the action property
+   function get_action() {
+   return $this->action;}
+ //method to push urls by GET
+  function push_url($action_new, $status_new,$type_new){
+  $this->action= $action_new;
+  $this->status= $status_new;
+  $this->type=$type_new;
+   if (($action_new=="display")and ($status_new=="1")) {
+   $home_scr=$_SERVER['PHP_SELF'];
+   header("Location:$home_scr"."?action=&status=0&type=$type_new");
+   }
+  }
+}
+
+function read_status($status_in) {
+ switch ($status_in) {
+   case 0:
+   echo "</br><h2>All OK</h2>"; 
+   break;
+   case 1:
+   echo "</br><h2>Initial Status</h2>"; 
+   break;
+   case 2: 
+   echo "</br><h2>You have been Redirected</h2>";
+   break;
+   case 3:
+   echo "</br><h2>Error?</h2>"; 
+   break;
+   default:
+   echo "</br><h2>Undefined status!</h2>";
+ }
+}
+?>

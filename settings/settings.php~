@@ -1,0 +1,13 @@
+<?php
+//variables to set the CMS environment when running
+//where is the database located relative to the engine
+$host="localhost";
+//db name in mysql
+$database="eshop";
+// user registered for the db
+$db_user="root";
+// password for the user in the database_schema
+$db_pass="mysql";
+//home address
+$home_scr=$_SERVER['PHP_SELF'];
+?>
