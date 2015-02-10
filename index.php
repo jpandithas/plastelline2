@@ -4,6 +4,7 @@ session_start();
 //include the objects library file
 //include ("includes/links.php");
 global $t_content;
+include "includes/forms.php";
 include "includes/router.php";
 include ("includes/themeinc.php");
 include ("includes/mysql.php");

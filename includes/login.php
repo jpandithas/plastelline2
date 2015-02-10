@@ -29,6 +29,14 @@
    $login_code.="<tr><td><input type='submit' name='submit' value='Login' size=15></td></tr>";
    $login_code.="</form>";
    $login_code.="</table>";
+
+     $form = new Webform("","POST", "login_form");
+     $form-> add_text("<br><div id='loginhead'><b>USER LOGIN</b></div>");
+     $form->insert_textbox("Username : ", "username");
+     $form ->insert_passwordbox("Password :", "password");
+     $form->insert_submit("Login");
+     $formcode = $form->getForm();
+
    print($login_code);
  }//end login function
 

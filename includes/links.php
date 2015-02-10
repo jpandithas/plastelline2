@@ -34,6 +34,9 @@ class url {
   }
 }
 
+
+
+
 //***reads the action and decides what to do (Usually, Redirects)
 //***the main brain behind the whole engine 
 //***some parts of the code here should check for login and userclass
